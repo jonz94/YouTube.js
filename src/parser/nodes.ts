@@ -176,6 +176,7 @@ export { default as LiveChat } from './classes/LiveChat.js';
 export { default as AddBannerToLiveChatCommand } from './classes/livechat/AddBannerToLiveChatCommand.js';
 export { default as AddChatItemAction } from './classes/livechat/AddChatItemAction.js';
 export { default as AddLiveChatTickerItemAction } from './classes/livechat/AddLiveChatTickerItemAction.js';
+export { default as ClientSideToggleMenuItem } from './classes/livechat/ClientSideToggleMenuItem.js';
 export { default as DimChatItemAction } from './classes/livechat/DimChatItemAction.js';
 export { default as LiveChatAutoModMessage } from './classes/livechat/items/LiveChatAutoModMessage.js';
 export { default as LiveChatBanner } from './classes/livechat/items/LiveChatBanner.js';
