@@ -227,6 +227,8 @@ export function getDynamicParsers() {
  * @param data - Raw data.
  */
 export function parseResponse<T extends IParsedResponse = IParsedResponse>(data: IRawResponse): T {
+  console.log(JSON.stringify(data, null, 2));
+
   const parsed_data = {} as T;
 
   _createMemo();
