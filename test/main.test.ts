@@ -216,14 +216,13 @@ describe('YouTube.js Tests', () => {
         });
       });
 
-      // @TODO: Not implemented yet.
-      // test('Channel#getLive', async () => {
-      //   const live = await channel.getLive();
-      //   expect(live).toBeDefined();
-      //   expect(live.current_tab).toBeDefined();
-      //   expect(live.current_tab?.content).toBeDefined();
-      //   expect(live.videos.length).toBeGreaterThan(0);
-      // });
+      test('Channel#getLiveStreams', async () => {
+        const live = await channel.getLiveStreams();
+        expect(live).toBeDefined();
+        expect(live.current_tab).toBeDefined();
+        expect(live.current_tab?.content).toBeDefined();
+        expect(live.videos.length).toBeGreaterThan(0);
+      });
 
       test('Channel#getPlaylists', async () => {
         const playlists = await channel.getPlaylists();
