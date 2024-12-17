@@ -49,6 +49,8 @@ export default class Author {
   }
 
   get best_thumbnail(): Thumbnail | undefined {
-    return this.thumbnails[0];
+    return this.thumbnails.reduce((preivous, current) => {
+      return current.width > preivous.width ? current : preivous;
+    }, this.thumbnails[0]);
   }
 }
